@@ -63,16 +63,13 @@ Comandos que permitan aplicar los algoritmos al dataset generado en la fase de E
 ### 📊 Gráficos Generados
 
 1.- Dispersión de predicción vs. real
-
    - Para validar qué tan preciso es el modelo.
+     
+2.- Tendencia de llenado por día/hora
+   - Para observar patrones de acumulación en distintos horarios.
 
-- Tendencia de llenado por día/hora
-
--- Para observar patrones de acumulación en distintos horarios.
-
-- Comparación de eficiencia de rutas
-
---Antes vs después de aplicar predicciones al sistema de recolección.
+3.- Comparación de eficiencia de rutas
+   -Antes vs después de aplicar predicciones al sistema de recolección.
 
 ---
 
@@ -82,6 +79,7 @@ Una vez aplicado los alogitmos demostrar los resultados obtenidos con su interpr
 
 ### Conclusión de la Fase del Proyecto.
 Redacción general de la importancia de esta fase , así cómo de la importancia de los resultados obtenidos
+
 
 
 
