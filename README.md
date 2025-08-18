@@ -13,6 +13,14 @@ Presentamos SmartWaste, una solución integral para la gestión inteligente de r
 <HR>
 
 ### 📝 Planteamiento del problema.
+La gestión de residuos sólidos urbanos es un desafío creciente para comunidades de todos los tamaños. En México, se generan más de **120 mil toneladas de basura diariamente**, de las cuales una parte significativa no se recolecta de manera eficiente.  
+
+Los principales problemas detectados son:  
+- **Contenedores saturados** antes de la fecha programada de recolección, ocasionando acumulaciones en la vía pública, malos olores y riesgos sanitarios.  
+- **Rutas innecesarias hacia contenedores medio vacíos**, generando gastos operativos elevados, consumo excesivo de combustible y emisiones contaminantes.  
+- **Falta de monitoreo en tiempo real**, que impide a las autoridades y empresas de recolección tomar decisiones basadas en datos precisos.  
+
+Actualmente, la mayoría de los sistemas de recolección operan bajo esquemas fijos, sin tomar en cuenta el nivel real de llenado de los contenedores, lo que provoca ineficiencias económicas, logísticas y ambientales.  
 <HR>
 
 ### 💡 Propuesta de solución.
