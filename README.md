@@ -24,11 +24,11 @@ Nuestro objetivo principal es diseñar e implementar una solución inteligente p
 
 ### ✅ Objetivos Especificos.
 
-1.- **Integración de Sensores IoT:** Implementar sensores en contenedores para detectar niveles de llenado.
-2.- **Desarrollo de App Móvil:** Crear una aplicación para notificar rutas óptimas al personal de recolección.
-3.- **Panel Web Interactivo:** Diseñar un panel para autoridades municipales con datos visuales en tiempo real.
-4.- **Automatización de Procesos:** Reducir costos operativos y tiempos de recolección mediante la automatización.
-5.- **Evaluación y Pruebas**: Validar el sistema con pruebas exhaustivas en un entorno urbano simulado.
+1.- **Integración de Sensores IoT:** Implementar sensores en contenedores para detectar niveles de llenado. <br>
+2.- **Desarrollo de App Móvil:** Crear una aplicación para notificar rutas óptimas al personal de recolección. <br>
+3.- **Panel Web Interactivo:** Diseñar un panel para autoridades municipales con datos visuales en tiempo real. <br>
+4.- **Automatización de Procesos:** Reducir costos operativos y tiempos de recolección mediante la automatización.<br>
+5.- **Evaluación y Pruebas**: Validar el sistema con pruebas exhaustivas en un entorno urbano simulado. <br>
 
 
 <HR>
