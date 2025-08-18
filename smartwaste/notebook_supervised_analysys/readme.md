@@ -64,7 +64,7 @@ Comandos que permitan aplicar los algoritmos al dataset generado en la fase de E
 
 1.- Dispersión de predicción vs. real
 
-    -Para validar qué tan preciso es el modelo.
+   - Para validar qué tan preciso es el modelo.
 
 - Tendencia de llenado por día/hora
 
@@ -82,6 +82,7 @@ Una vez aplicado los alogitmos demostrar los resultados obtenidos con su interpr
 
 ### Conclusión de la Fase del Proyecto.
 Redacción general de la importancia de esta fase , así cómo de la importancia de los resultados obtenidos
+
 
 
 
