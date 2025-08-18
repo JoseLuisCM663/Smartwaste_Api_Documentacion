@@ -14,10 +14,26 @@ El objetivo es predecir el nivel de llenado futuro de cada contenedor, calcular 
 
 - ¿Qué rutas de recolección pueden optimizarse para ahorrar recursos?
 
+---
 
-### Elección del mecanismo a utilizar.
-El analisis supervisado se utiliza para la generación de conocimiento aplicado a predicciones, clasificaciones, recomendaciones, comprensión de contextos, propuesta de soluciones a problema, etc. a través de principios matemáticos y estadisticos, el equipo definirá el mecanismo (algoritmo) que utilizará para su proyecto.
+### ⚙️ Elección del Mecanismo a Utilizar
 
+El aprendizaje supervisado se selecciona porque permite generar predicciones basadas en datos históricos.
+Entre los algoritmos considerados, se definió utilizar Regresión Lineal Múltiple como mecanismo principal, ya que:
+
+- Es interpretable y fácil de implementar.
+
+- Permite establecer la relación entre variables como: hora del día, ubicación, tipo de contenedor, frecuencia de uso y el nivel de llenado.
+
+- Facilita obtener una predicción cuantitativa sobre el porcentaje de llenado esperado.
+
+ Otros algoritmos a considerar para pruebas complementarias:
+
+-Árboles de Decisión → para clasificar contenedores en “bajo, medio, alto llenado”.
+
+- Random Forest → para mejorar precisión con un enfoque de ensamble.
+
+---
 
 ### Marco Teórico
 Redacción que explique los conceptos teóricos y formulas matemáticas o estadísta para el mecanismo definido.
@@ -37,6 +53,7 @@ Una vez aplicado los alogitmos demostrar los resultados obtenidos con su interpr
 
 ### Conclusión de la Fase del Proyecto.
 Redacción general de la importancia de esta fase , así cómo de la importancia de los resultados obtenidos
+
 
 
 
