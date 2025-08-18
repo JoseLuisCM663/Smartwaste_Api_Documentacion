@@ -1,4 +1,4 @@
-# Smartwaste_Api_Documentacion
+# Smartwaste_Api_Documentación
 <HR>
 
 ### 📌 Descripción.
