@@ -29,7 +29,7 @@ Entre los algoritmos considerados, se definió utilizar Regresión Lineal Múlti
 
  Otros algoritmos a considerar para pruebas complementarias:
 
--Árboles de Decisión → para clasificar contenedores en “bajo, medio, alto llenado”.
+- Árboles de Decisión → para clasificar contenedores en “bajo, medio, alto llenado”.
 
 - Random Forest → para mejorar precisión con un enfoque de ensamble.
 
@@ -53,6 +53,7 @@ Una vez aplicado los alogitmos demostrar los resultados obtenidos con su interpr
 
 ### Conclusión de la Fase del Proyecto.
 Redacción general de la importancia de esta fase , así cómo de la importancia de los resultados obtenidos
+
 
 
 
