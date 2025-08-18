@@ -82,6 +82,7 @@ Tras aplicar el modelo de regresión al dataset generado:
 - Se identificaron zonas con mayor generación de residuos en horarios pico (18:00 - 22:00 hrs).
 
 - Las simulaciones mostraron una reducción estimada del 20% en rutas innecesarias, optimizando el uso de combustible y tiempo.
+---
 
 ### ✅ Conclusión de la Fase del Proyecto
 
@@ -89,6 +90,7 @@ La aplicación de análisis supervisado permitió transformar los datos recolect
 Los resultados obtenidos muestran que es posible predecir el llenado de los contenedores con buena precisión, lo cual facilita la optimización de rutas de recolección y una reducción de costos operativos y emisiones contaminantes.
 
 Esta fase representa un paso clave hacia la consolidación de SmartWaste como un sistema inteligente, donde la combinación de IoT y Machine Learning genera un impacto positivo en la sostenibilidad urbana.
+
 
 
 
