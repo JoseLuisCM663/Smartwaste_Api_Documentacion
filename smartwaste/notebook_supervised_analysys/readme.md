@@ -1,8 +1,18 @@
 # Analisis Supervisado (Machine Learning)
 <HR>
 
-### Propuesta de Aplicación
-Redacción de los que el equipo propone para analisar y obtener una predicción y promedio, reducción
+### 📌 Propuesta de Aplicación
+
+El equipo propone aplicar técnicas de aprendizaje supervisado para analizar los datos recolectados por los sensores IoT instalados en los contenedores de basura.
+El objetivo es predecir el nivel de llenado futuro de cada contenedor, calcular el promedio de generación de residuos por zona y obtener una reducción de rutas innecesarias en el servicio de recolección.
+
+Con este análisis, se busca responder preguntas como:
+
+¿En qué momento un contenedor alcanzará el 80% de su capacidad?
+
+¿Qué zonas generan más residuos y en qué horarios?
+
+¿Qué rutas de recolección pueden optimizarse para ahorrar recursos?
 
 
 ### Elección del mecanismo a utilizar.
@@ -27,4 +37,5 @@ Una vez aplicado los alogitmos demostrar los resultados obtenidos con su interpr
 
 ### Conclusión de la Fase del Proyecto.
 Redacción general de la importancia de esta fase , así cómo de la importancia de los resultados obtenidos
+
 
