@@ -76,6 +76,14 @@ Nuestro objetivo principal es diseñar e implementar una solución inteligente p
 
 ### Diagrama de Gantt
 ![gantt](https://github.com/juuaaann456/imagenes/blob/60d686ad19d3823662800c36d28a34da9b9a95bd/imagenes/Imagen%20de%20WhatsApp%202025-08-18%20a%20las%2016.58.06_bde5a783.jpg)
+<HR>
 
 ### Lista de Tecnologias
-Lista de Herramientas, Librerias, Software con iconografia a utlizar en el desarrollo de proyecto.
+| Tecnología      | Descripción                                                                      |
+|-----------------|----------------------------------------------------------------------------------|
+| ![Vue.js](https://img.shields.io/badge/Vue.js-Framework-brightgreen)   | Framework progresivo para la construcción de interfaces de usuario |
+| ![Node.js](https://img.shields.io/badge/Node.js-Server-green)         | Entorno de ejecución de JavaScript para el backend |
+| ![MySQL](https://img.shields.io/badge/MySQL-Database-orange)          | Base de datos relacional para la gestión de datos |
+| ![CSS](https://img.shields.io/badge/CSS-Style-blue)                  | Estilos y diseño responsivo |
+| ![JavaScript](https://img.shields.io/badge/JavaScript-Scripting-yellow) | Lenguaje de programación para la lógica en el frontend y backend |
+| ![README](https://img.shields.io/badge/README-Documentation-lightgrey) | Archivo de documentación para el proyecto |
