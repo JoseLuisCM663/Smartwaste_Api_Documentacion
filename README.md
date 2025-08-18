@@ -9,7 +9,7 @@ Presentamos SmartWaste, una solución integral para la gestión inteligente de r
 
 | Logo del Producto | Logo de la Empresa |
 |-----------------------|---------------------|
-|  |  |
+| ![producto](https://github.com/juuaaann456/imagenes/blob/60d686ad19d3823662800c36d28a34da9b9a95bd/imagenes/logoo.png) | ![empresa](https://github.com/juuaaann456/imagenes/blob/60d686ad19d3823662800c36d28a34da9b9a95bd/imagenes/Imagen%20de%20WhatsApp%202025-08-18%20a%20las%2017.13.11_fc17be83.jpg) |
 <HR>
 
 ### 📝 Planteamiento del problema.
@@ -47,7 +47,7 @@ Nuestro objetivo principal es diseñar e implementar una solución inteligente p
 | Zamira Cuevas Zamora   | CEO y Documentador           | [ZamyCuevas](https://github.com/ZamyCuevas)         |  
 
 ### Diagrama de Gantt
-Diagrama de identificacion de tareas para realizar el proyecto, asi como de calculo de tiempos establecidos para cada tarea principal.
+![gantt](https://github.com/juuaaann456/imagenes/blob/60d686ad19d3823662800c36d28a34da9b9a95bd/imagenes/Imagen%20de%20WhatsApp%202025-08-18%20a%20las%2016.58.06_bde5a783.jpg)
 
 ### Lista de Tecnologias
 Lista de Herramientas, Librerias, Software con iconografia a utlizar en el desarrollo de proyecto.
