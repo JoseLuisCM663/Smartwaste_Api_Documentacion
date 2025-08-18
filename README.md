@@ -34,6 +34,7 @@ Nuestro objetivo principal es diseñar e implementar una solución inteligente p
 <HR>
 
 ### 👥 Organigrama de Trabajo.
+![imagen](https://github.com/JoseLuisCM663/Smartwaste_Api_Documentacion/blob/86cdf40d21da69aaa7d1eef4ace5a0b3baa81c7a/imagenes/WhatsApp%20Image%202025-08-14%20at%201.55.13%20PM.jpeg)
 <HR>
 
 ### 👥 Tabla de Colaboradores.
@@ -44,3 +45,9 @@ Nuestro objetivo principal es diseñar e implementar una solución inteligente p
 | Juan Alberto Vazquez Hernandez | Desarrollador Frontend       | [@juuaaann456](https://github.com/juuaaann456)           |  
 | Omar Lemuel Espejel Lira       | Desarrollador Database       | [@lemuel-26](https://github.com/lemuel-26)             |  
 | Zamira Cuevas Zamora   | CEO y Documentador           | [ZamyCuevas](https://github.com/ZamyCuevas)         |  
+
+### Diagrama de Gantt
+Diagrama de identificacion de tareas para realizar el proyecto, asi como de calculo de tiempos establecidos para cada tarea principal.
+
+### Lista de Tecnologias
+Lista de Herramientas, Librerias, Software con iconografia a utlizar en el desarrollo de proyecto.
