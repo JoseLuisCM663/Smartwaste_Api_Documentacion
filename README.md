@@ -24,6 +24,26 @@ Actualmente, la mayoría de los sistemas de recolección operan bajo esquemas fi
 <HR>
 
 ### 💡 Propuesta de solución.
+**SmartWaste** es una solución tecnológica integral basada en **IoT y análisis de datos en tiempo real** que busca optimizar la gestión de residuos urbanos.  
+
+La propuesta consiste en:  
+1. **Dispositivos IoT en contenedores de basura**  
+   - Sensores ultrasónicos o infrarrojos para medir el nivel de llenado.  
+   - Transmisión de datos en tiempo real hacia una plataforma central.  
+
+2. **Plataforma Web (Dashboard)**  
+   - Visualización del estado de cada contenedor en un mapa interactivo.  
+   - Alertas automáticas cuando un contenedor alcanza un umbral crítico de llenado.  
+   - Reportes históricos para analizar patrones de generación de residuos.  
+
+3. **Optimización de rutas de recolección**  
+   - Algoritmos que sugieran recorridos más eficientes.  
+   - Reducción de costos operativos y emisiones contaminantes.  
+
+4. **Impacto esperado**  
+   - Reducción de acumulación de basura en vía pública.  
+   - Ahorro de recursos en combustible y personal.  
+   - Contribución a los **ODS 11 (Ciudades sostenibles)** y **ODS 12 (Consumo responsable)**.  
 <HR>
 
 ### 🎯 Objetivo General.
