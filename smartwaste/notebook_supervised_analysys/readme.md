@@ -60,9 +60,21 @@ El modelo ajusta los coeficientes minimizando la suma de los errores cuadrados (
 Comandos que permitan aplicar los algoritmos al dataset generado en la fase de ETL.
 
 
-### Gráficos Generados (3 mínimo)
-Generación y visualización de graficos relacionados con el análisis supervisado
+### 📊 Gráficos Generados
 
+- Dispersión de predicción vs. real
+
+-- Para validar qué tan preciso es el modelo.
+
+- Tendencia de llenado por día/hora
+
+-- Para observar patrones de acumulación en distintos horarios.
+
+- Comparación de eficiencia de rutas
+
+--Antes vs después de aplicar predicciones al sistema de recolección.
+
+---
 
 ### Resultados Obtenidos
 Una vez aplicado los alogitmos demostrar los resultados obtenidos con su interpretación al contexto del proyecto
@@ -70,6 +82,7 @@ Una vez aplicado los alogitmos demostrar los resultados obtenidos con su interpr
 
 ### Conclusión de la Fase del Proyecto.
 Redacción general de la importancia de esta fase , así cómo de la importancia de los resultados obtenidos
+
 
 
 
