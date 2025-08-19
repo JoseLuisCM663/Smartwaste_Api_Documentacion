@@ -131,3 +131,5 @@ Esta fase **revela patrones de comportamiento** en los sensores sin requerir eti
 * 💡 Aportar inteligencia al sistema SmartWasteWeb.
 
 La **combinación de K-Means + PCA** permite integrar el análisis no supervisado de forma simple, rápida y visualmente interpretable.
+
+ñ
