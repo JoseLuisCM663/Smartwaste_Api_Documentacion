@@ -90,7 +90,7 @@ sns.scatterplot(data=sensor_df, x='PCA1', y='PCA2', hue='cluster', palette='Set2
 
 ### 2. 📊 Promedio por Clúster:
 
-![Promedios por Clúster](./imgs/output(1).png)
+![Promedios por Clúster](./imgs/output1.png)
 
 ```python
 group_means = sensor_df.groupby('cluster')[['nivel', 'temperatura', 'humedad']].mean()
@@ -99,7 +99,7 @@ group_means.plot(kind='bar', figsize=(6, 4))
 
 ### 3. 📦 Distribución (Boxplot por variable):
 
-![Distribución del Nivel por Clúster](./imgs/output(2).png)
+![Distribución del Nivel por Clúster](./imgs/output2.png)
 
 ```python
 sensor_df_melted = pd.melt(sensor_df, id_vars='cluster', value_vars=['nivel', 'temperatura', 'humedad'], var_name='Variable', value_name='Valor')
@@ -131,5 +131,3 @@ Esta fase **revela patrones de comportamiento** en los sensores sin requerir eti
 * 💡 Aportar inteligencia al sistema SmartWasteWeb.
 
 La **combinación de K-Means + PCA** permite integrar el análisis no supervisado de forma simple, rápida y visualmente interpretable.
-
-ñ
