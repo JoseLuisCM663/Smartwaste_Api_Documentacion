@@ -25,10 +25,10 @@ Archivo de estructura de la base de datos (relacional):
 ## 🖼️ Screenshots (capturas de pantalla)
 
 ### 1. Endpoint `/seeder/generar-lecturas/`
-![Generar lecturas](screenshots/seeder_generar_lecturas.png)
+![Generar lecturas](seeder_generar_lecturas.png)
 
 ### 2. Endpoint `/seeder/bitacoras/`
-![Generar bitácoras](screenshots/seeder_generar_bitacoras.png)
+![Generar bitácoras](seeder_generar_bitacoras.png)
 
 ---
 
