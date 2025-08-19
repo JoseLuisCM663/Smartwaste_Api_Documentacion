@@ -8,7 +8,7 @@ Repositorio de la API: [SmartWasteApi](https://github.com/JoseLuisCM663/SmartWas
 
 ## 🗄️ Respaldo de la BD vacía (sin datos generados)
 Archivo de estructura de la base de datos (relacional):  
-`/database/backups/smartwaste_empty.sql`  
+`smartwaste_empty.sql`  
 *(Debe contener solo la estructura de tablas y relaciones sin datos)*
 
 ---
@@ -34,7 +34,7 @@ Archivo de estructura de la base de datos (relacional):
 
 ## 🗄️ Respaldo de la BD post llenado (1,000,000 de registros)
 Archivo con datos generados para análisis supervisado y no supervisado:  
-`/database/backups/smartwaste_filled.sql`
+`smartwaste_filled.sql`
 
 Este respaldo incluye:
 - Usuarios (Admin, Usuario, Chofer)
