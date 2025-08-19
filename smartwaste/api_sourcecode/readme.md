@@ -1,26 +1,4 @@
 
-# Api
-
-## codigo fuente
-liga al repositorio
-
-## Operaciones crud basicas
-Explicacion brebe de las operaciones get, put patch, delete, post que se diseñaron
-
-## Listado de endpoints de las entidades
-Tabla que contendra los endpoints y descripcion de la funcionalidD SObre las entidades
-
-## Screenshots
-de los endpoints que generan las operaciones crud
-
-## endpoints que utilizan ML
-Explicacion de las operaciones get, put patch, delete, post que se diseñaron
-
-##  listado de enpoints que consumen ml  
-tabla que contendra los endpoints ybdescripcion de las funcionalidad sobre los algoritmos de analisis de datos
-
-## Screenshots
-de los endpoints que generan las operaciones del analisis supervisado y no supervisado
 # SmartWaste API
 
 ## 📂 Código Fuente
