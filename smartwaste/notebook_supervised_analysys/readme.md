@@ -56,8 +56,32 @@ El modelo ajusta los coeficientes minimizando la suma de los errores cuadrados (
 ---
 
 
-### Aplicación del Mecanismo
-Comandos que permitan aplicar los algoritmos al dataset generado en la fase de ETL.
+
+### 🖥️ Aplicación del Mecanismo
+Ejemplo de aplicación en Python (fase ETL → dataset → modelo):  
+
+
+    import pandas as pd
+    from sklearn.model_selection import train_test_split
+    from sklearn.linear_model import LinearRegression
+    import matplotlib.pyplot as plt
+
+    # Cargar dataset (ejemplo con datos simulados de sensores)
+    data = pd.read_csv("smartwaste_dataset.csv")
+
+    # Variables independientes y dependiente
+    X = data[["hora", "dia_semana", "ubicacion_id", "capacidad"]]
+    y = data["nivel_llenado"]
+
+    # División en entrenamiento y prueba
+    X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=42)
+
+    # Modelo de regresión
+    model = LinearRegression()
+    model.fit(X_train, y_train)
+
+    # Predicciones
+     y_pred = model.predict(X_test) 
 ---
 
 ### 📊 Gráficos Generados
@@ -90,6 +114,7 @@ La aplicación de análisis supervisado permitió transformar los datos recolect
 Los resultados obtenidos muestran que es posible predecir el llenado de los contenedores con buena precisión, lo cual facilita la optimización de rutas de recolección y una reducción de costos operativos y emisiones contaminantes.
 
 Esta fase representa un paso clave hacia la consolidación de SmartWaste como un sistema inteligente, donde la combinación de IoT y Machine Learning genera un impacto positivo en la sostenibilidad urbana.
+
 
 
 
