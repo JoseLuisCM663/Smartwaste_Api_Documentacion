@@ -87,11 +87,7 @@ Ejemplo de aplicación en Python (fase ETL → dataset → modelo):
 ### 📊 Gráficos Generados
 | Capacidad por Ruta| Tendencia de Uso | Estado de Contenedores |
 |-----------------------|---------------------|---------------------|
-| Capacidad vs uso actual de contenedores por ruta
-
-![ruta](https://github.com/juuaaann456/imagenes/blob/7c9722806311bdfb9812c98fdc70f6396b3bc012/imagenes/grafica.PNG) | Uso promedio de contenedores en el tiempo
-![Uso](https://github.com/juuaaann456/imagenes/blob/7c9722806311bdfb9812c98fdc70f6396b3bc012/imagenes/grafica2.PNG) | Distribución de contenedores por nivel de llenado
-![contenedores](https://github.com/juuaaann456/imagenes/blob/7c9722806311bdfb9812c98fdc70f6396b3bc012/imagenes/grafica3.PNG) |
+| ![ruta](https://github.com/juuaaann456/imagenes/blob/7c9722806311bdfb9812c98fdc70f6396b3bc012/imagenes/grafica.PNG) | ![Uso](https://github.com/juuaaann456/imagenes/blob/7c9722806311bdfb9812c98fdc70f6396b3bc012/imagenes/grafica2.PNG) |![contenedores](https://github.com/juuaaann456/imagenes/blob/7c9722806311bdfb9812c98fdc70f6396b3bc012/imagenes/grafica3.PNG) |
 
 ---
 
