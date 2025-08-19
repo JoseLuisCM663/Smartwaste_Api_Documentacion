@@ -81,8 +81,7 @@ Nuestro objetivo principal es diseñar e implementar una solución inteligente p
 ### Lista de Tecnologias
 | Tecnología      | Descripción                                                                      |
 |-----------------|----------------------------------------------------------------------------------|
-| ![TypeScript](https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white)   | Framework progresivo para la construcción de interfaces de usuario |
-| ![Node.js](https://img.shields.io/badge/Node.js-Server-green)         | Entorno de ejecución de JavaScript para el backend |
+| ![TypeScript](https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white)   | Lenguaje de programación desarrollado por Microsoft que se basa en JavaScript |
 | ![MySQL](https://img.shields.io/badge/MySQL-005C84?style=for-the-badge&logo=mysql&logoColor=white)          | Base de datos relacional para la gestión de datos |
 | ![CSS](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)                  | Estilos y diseño responsivo |
 | ![JavaScript](https://img.shields.io/badge/JavaScript-323330?style=for-the-badge&logo=javascript&logoColor=F7DF1E) | Lenguaje de programación para la lógica en el frontend y backend |
