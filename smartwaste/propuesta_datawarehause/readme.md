@@ -18,19 +18,19 @@ Fuentes principales en el proyecto:
 
 ## 🎯 Propuesta de 3 Orígenes de Datos Alternativos
 
-Datos Meteorológicos
+📊 Datos Meteorológicos
 
 Fuente: APIs públicas como OpenWeatherMap.
 
 Uso: Analizar si clima (lluvia, calor) influye en el llenado.
 
-Censos Poblacionales
+📊 Censos Poblacionales
 
 Fuente: INEGI u otros organismos.
 
 Uso: Correlacionar zonas de alta densidad con generación de residuos.
 
-Eventos Locales
+📊 Eventos Locales
 
 Fuente: Calendarios cívicos o eventos comunitarios.
 
@@ -38,27 +38,27 @@ Uso: Detectar aumentos temporales en residuos por festividades.
 
 ## 💡 5 Experimentos de Asociación de Datos
 
-Llenado vs Temperatura Ambiente
+✅ Llenado vs Temperatura Ambiente
 
 Hipótesis: A mayor temperatura, mayor descomposición y frecuencia de uso.
 
-Humedad Sensor vs Clima Real
+✅ Humedad Sensor vs Clima Real
 
 Hipótesis: Verificar si humedad en sensores es por clima o fugas.
 
-Nivel vs Horarios de Recolección
+✅ Nivel vs Horarios de Recolección
 
 Hipótesis: Rutas mal planificadas generan sobrellenado antes de recolección.
 
-Densidad Poblacional vs Cantidad de Alertas
+✅ Densidad Poblacional vs Cantidad de Alertas
 
 Hipótesis: Zonas más habitadas generan más problemas.
 
-Eventos vs Generación de Residuos
+✅ Eventos vs Generación de Residuos
 
 Hipótesis: Días festivos → picos de residuos en plazas o parques.
 
-## ✅ Toma de Decisiones (5 Supuestos)
+## 🌐 Toma de Decisiones (5 Supuestos)
 
 Si el clima influye en el llenado, las rutas podrían ajustarse según pronóstico.
 
