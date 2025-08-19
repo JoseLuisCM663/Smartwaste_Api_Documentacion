@@ -85,18 +85,22 @@ Ejemplo de aplicación en Python (fase ETL → dataset → modelo):
 ---
 
 ### 📊 Gráficos Generados
+| Capacidad por Ruta| Tendencia de Uso | Estado de Contenedores |
+|-----------------------|---------------------|---------------------|
+| ![ruta](https://github.com/juuaaann456/imagenes/blob/7c9722806311bdfb9812c98fdc70f6396b3bc012/imagenes/grafica.PNG) | ![Uso](https://github.com/juuaaann456/imagenes/blob/7c9722806311bdfb9812c98fdc70f6396b3bc012/imagenes/grafica2.PNG) | ![contenedores](https://github.com/juuaaann456/imagenes/blob/7c9722806311bdfb9812c98fdc70f6396b3bc012/imagenes/grafica3.PNG) |
+
 
 1.- Capacidad por Ruta
    - Capacidad vs uso actual de contenedores por ruta
-![ruta](https://github.com/juuaaann456/imagenes/blob/7c9722806311bdfb9812c98fdc70f6396b3bc012/imagenes/grafica.PNG)
+
      
 2.- Tendencia de Uso
    - Uso promedio de contenedores en el tiempo
-![Uso](https://github.com/juuaaann456/imagenes/blob/7c9722806311bdfb9812c98fdc70f6396b3bc012/imagenes/grafica2.PNG)
+
 
 3.- Estado de Contenedores
    - Distribución de contenedores por nivel de llenado
-![contenedores](https://github.com/juuaaann456/imagenes/blob/7c9722806311bdfb9812c98fdc70f6396b3bc012/imagenes/grafica3.PNG)
+
 
 ---
 
@@ -117,6 +121,7 @@ La aplicación de análisis supervisado permitió transformar los datos recolect
 Los resultados obtenidos muestran que es posible predecir el llenado de los contenedores con buena precisión, lo cual facilita la optimización de rutas de recolección y una reducción de costos operativos y emisiones contaminantes.
 
 Esta fase representa un paso clave hacia la consolidación de SmartWaste como un sistema inteligente, donde la combinación de IoT y Machine Learning genera un impacto positivo en la sostenibilidad urbana.
+
 
 
 
