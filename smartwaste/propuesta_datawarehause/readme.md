@@ -60,14 +60,14 @@ Hipótesis: Días festivos → picos de residuos en plazas o parques.
 
 ## 🌐 Toma de Decisiones (5 Supuestos)
 
-Si el clima influye en el llenado, las rutas podrían ajustarse según pronóstico.
+🧠 Si el clima influye en el llenado, las rutas podrían ajustarse según pronóstico.
 
-Si zonas densamente pobladas generan más residuos, se asignarán más contenedores.
+🧠 Si zonas densamente pobladas generan más residuos, se asignarán más contenedores.
 
-Si hay humedad anormal sin lluvia, se planificará revisión técnica.
+🧠 Si hay humedad anormal sin lluvia, se planificará revisión técnica.
 
-Si eventos generan aumentos, se agregarán rutas temporales.
+🧠 Si eventos generan aumentos, se agregarán rutas temporales.
 
-Si alertas coinciden con zonas pobladas, se refuerza la supervisión visual y mantenimiento.
+🧠 Si alertas coinciden con zonas pobladas, se refuerza la supervisión visual y mantenimiento.
 
 El datawarehouse permitiría mezclar todos estos datos y generar análisis más inteligentes y estratégicos para hacer de SmartWaste un sistema verdaderamente inteligente y adaptativo.
