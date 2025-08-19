@@ -69,10 +69,10 @@ Nuestro objetivo principal es diseñar e implementar una solución inteligente p
 
 | Nombre                        | Rol                          | Usuario               |  
 |-------------------------------|------------------------------|-----------------------|  
-| Jose Luis Campos Marquez      | Desarrollador Backend        | [@JoseLuisCM663](https://github.com/JoseLuisCM663)         |  
+| Jose Luis Campos Marquez      | Desarrollador Backend y CEO       | [@JoseLuisCM663](https://github.com/JoseLuisCM663)         |  
 | Juan Alberto Vazquez Hernandez | Desarrollador Frontend       | [@juuaaann456](https://github.com/juuaaann456)           |  
 | Omar Lemuel Espejel Lira       | Desarrollador Database       | [@lemuel-26](https://github.com/lemuel-26)             |  
-| Zamira Cuevas Zamora   | CEO y Documentador           | [ZamyCuevas](https://github.com/ZamyCuevas)         |  
+| Zamira Cuevas Zamora   | Documentador           | [ZamyCuevas](https://github.com/ZamyCuevas)         |  
 
 ### Diagrama de Gantt
 ![gantt](https://github.com/juuaaann456/imagenes/blob/60d686ad19d3823662800c36d28a34da9b9a95bd/imagenes/Imagen%20de%20WhatsApp%202025-08-18%20a%20las%2016.58.06_bde5a783.jpg)
