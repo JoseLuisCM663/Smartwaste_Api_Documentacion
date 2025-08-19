@@ -1,5 +1,6 @@
-🧱 Propuesta de Datawarehouse - SmartWasteWeb
-📌 Contexto de un Datawarehouse en el Proyecto
+# 🧱 Propuesta de Datawarehouse - SmartWasteWeb
+
+## 📌 Contexto de un Datawarehouse en el Proyecto
 
 Un Datawarehouse (almacén de datos) es un sistema que integra información desde diversas fuentes para su análisis y consulta en la toma de decisiones. En SmartWasteWeb, un datawarehouse serviría para concentrar datos históricos de sensores, rutas de recolección, alertas, mantenimientos y reportes ciudadanos.
 
@@ -15,7 +16,7 @@ Fuentes principales en el proyecto:
 
 👥 Reportes ciudadanos (si se integran en futuro).
 
-🎯 Propuesta de 3 Orígenes de Datos Alternativos
+## 🎯 Propuesta de 3 Orígenes de Datos Alternativos
 
 Datos Meteorológicos
 
@@ -35,7 +36,7 @@ Fuente: Calendarios cívicos o eventos comunitarios.
 
 Uso: Detectar aumentos temporales en residuos por festividades.
 
-💡 5 Experimentos de Asociación de Datos
+## 💡 5 Experimentos de Asociación de Datos
 
 Llenado vs Temperatura Ambiente
 
@@ -57,7 +58,7 @@ Eventos vs Generación de Residuos
 
 Hipótesis: Días festivos → picos de residuos en plazas o parques.
 
-✅ Toma de Decisiones (5 Supuestos)
+## ✅ Toma de Decisiones (5 Supuestos)
 
 Si el clima influye en el llenado, las rutas podrían ajustarse según pronóstico.
 
