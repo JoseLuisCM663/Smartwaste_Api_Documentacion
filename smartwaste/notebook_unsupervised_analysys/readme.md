@@ -19,7 +19,7 @@ Se elige el algoritmo **K-Means**, ya que permite:
 * ✅ Agrupar sensores según su comportamiento (nivel, temperatura, humedad).
 * ✅ Detectar automáticamente segmentos de datos sin etiquetas.
 * ✅ Aplicar PCA para visualización 2D/3D.
-* ✅ Calcular métricas de cohesión de clústeres (Silhouette Score).
+* ✅ Calcular métricas de cohesión de clústeres (Silhouette Score). 
 
 ```python
 from sklearn.cluster import KMeans
