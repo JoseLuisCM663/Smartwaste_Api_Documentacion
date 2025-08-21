@@ -69,10 +69,10 @@ Nuestro objetivo principal es diseñar e implementar una solución inteligente p
 
 | Nombre                        | Rol                          | Usuario               |  
 |-------------------------------|------------------------------|-----------------------|  
-| Jose Luis Campos Marquez      | Desarrollador Backend        | [@JoseLuisCM663](https://github.com/JoseLuisCM663)         |  
+| Jose Luis Campos Marquez      | Desarrollador Backend y CEO       | [@JoseLuisCM663](https://github.com/JoseLuisCM663)         |  
 | Juan Alberto Vazquez Hernandez | Desarrollador Frontend       | [@juuaaann456](https://github.com/juuaaann456)           |  
 | Omar Lemuel Espejel Lira       | Desarrollador Database       | [@lemuel-26](https://github.com/lemuel-26)             |  
-| Zamira Cuevas Zamora   | CEO y Documentador           | [ZamyCuevas](https://github.com/ZamyCuevas)         |  
+| Zamira Cuevas Zamora   | Documentador           | [ZamyCuevas](https://github.com/ZamyCuevas)         |  
 
 ### Diagrama de Gantt
 ![gantt](https://github.com/juuaaann456/imagenes/blob/60d686ad19d3823662800c36d28a34da9b9a95bd/imagenes/Imagen%20de%20WhatsApp%202025-08-18%20a%20las%2016.58.06_bde5a783.jpg)
@@ -81,9 +81,8 @@ Nuestro objetivo principal es diseñar e implementar una solución inteligente p
 ### Lista de Tecnologias
 | Tecnología      | Descripción                                                                      |
 |-----------------|----------------------------------------------------------------------------------|
-| ![Vue.js](https://img.shields.io/badge/Vue.js-Framework-brightgreen)   | Framework progresivo para la construcción de interfaces de usuario |
-| ![Node.js](https://img.shields.io/badge/Node.js-Server-green)         | Entorno de ejecución de JavaScript para el backend |
-| ![MySQL](https://img.shields.io/badge/MySQL-Database-orange)          | Base de datos relacional para la gestión de datos |
-| ![CSS](https://img.shields.io/badge/CSS-Style-blue)                  | Estilos y diseño responsivo |
-| ![JavaScript](https://img.shields.io/badge/JavaScript-Scripting-yellow) | Lenguaje de programación para la lógica en el frontend y backend |
+| ![TypeScript](https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white)   | Lenguaje de programación desarrollado por Microsoft que se basa en JavaScript |
+| ![MySQL](https://img.shields.io/badge/MySQL-005C84?style=for-the-badge&logo=mysql&logoColor=white)          | Base de datos relacional para la gestión de datos |
+| ![CSS](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)                  | Estilos y diseño responsivo |
+| ![JavaScript](https://img.shields.io/badge/JavaScript-323330?style=for-the-badge&logo=javascript&logoColor=F7DF1E) | Lenguaje de programación para la lógica en el frontend y backend |
 | ![README](https://img.shields.io/badge/README-Documentation-lightgrey) | Archivo de documentación para el proyecto |
