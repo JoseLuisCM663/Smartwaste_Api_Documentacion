@@ -1,128 +1,159 @@
-# Analisis Supervisado (Machine Learning)
-<HR>
+🎯 Modelo de Aprendizaje Supervisado - Clasificación de Rutas Eficientes  
 
-### 📌 Propuesta de Aplicación
+📋 Propuesta de Aplicación  
+El modelo de aprendizaje supervisado se utiliza para **clasificar automáticamente rutas de recolección** en **Eficientes (1)** o **No Eficientes (0)**, tomando en cuenta los tiempos de duración y el porcentaje de recolección alcanzado.  
+Este sistema permite:  
 
-El equipo propone aplicar técnicas de aprendizaje supervisado para analizar los datos recolectados por los sensores IoT instalados en los contenedores de basura.
-El objetivo es predecir el nivel de llenado futuro de cada contenedor, calcular el promedio de generación de residuos por zona y obtener una reducción de rutas innecesarias en el servicio de recolección.
-
-- Con este análisis, se busca responder preguntas como:
-
-- ¿En qué momento un contenedor alcanzará el 80% de su capacidad?
-
-- ¿Qué zonas generan más residuos y en qué horarios?
-
-- ¿Qué rutas de recolección pueden optimizarse para ahorrar recursos?
+- ⏱️ **Medición de desempeño**: Determinar si una ruta cumple con los criterios de eficiencia establecidos.  
+- 🗑️ **Optimización logística**: Identificar rutas que recolectan menos contenedores o con tiempos excesivos.  
+- 📊 **Análisis comparativo**: Evaluar el impacto de los factores que más influyen en la eficiencia.  
+- ⚡ **Automatización del análisis**: Generar gráficas y métricas sin intervención manual.  
+- 🔮 **Base para predicciones futuras**: Servir como insumo para optimizar la planeación de rutas.  
 
 ---
 
-### ⚙️ Elección del Mecanismo a Utilizar
+🔧 Elección del Mecanismo a Utilizar  
 
-El aprendizaje supervisado se selecciona porque permite generar predicciones basadas en datos históricos.
-Entre los algoritmos considerados, se definió utilizar Regresión Lineal Múltiple como mecanismo principal, ya que:
+**Algoritmo Principal:** Random Forest Classifier  
 
-- Es interpretable y fácil de implementar.
+Se seleccionó **Random Forest** por las siguientes ventajas:  
 
-- Permite establecer la relación entre variables como: hora del día, ubicación, tipo de contenedor, frecuencia de uso y el nivel de llenado.
+✅ Maneja relaciones no lineales entre variables.  
+✅ Es robusto frente a outliers y ruido en los datos.  
+✅ Reduce el riesgo de overfitting al usar un ensamble de árboles.  
+✅ Permite interpretar la importancia de cada característica.  
+✅ Tiene un buen desempeño con datasets tabulares medianos.  
 
-- Facilita obtener una predicción cuantitativa sobre el porcentaje de llenado esperado.
+**Configuración del Modelo:**  
 
- Otros algoritmos a considerar para pruebas complementarias:
 
-- Árboles de Decisión → para clasificar contenedores en “bajo, medio, alto llenado”.
+    clf = RandomForestClassifier(
+    n_estimators=100,   # Número de árboles en el bosque
+    random_state=42     # Reproducibilidad
+    )   
 
-- Random Forest → para mejorar precisión con un enfoque de ensamble.
+## 📚 Marco Teórico
+
+### Clasificación Supervisada
+El aprendizaje supervisado utiliza datos etiquetados `(X, y)` para entrenar un modelo que prediga nuevas instancias.  
+En este caso:
+
+- **X** = Tiempo_Duración, Cantidad_Contenedores, Promedio_Llenado, Porcentaje_Recolectado  
+- **y** = Etiqueta binaria `Eficiente` (1 si cumple reglas de negocio, 0 en caso contrario).  
 
 ---
 
-### 📚 Marco Teórico
-El **aprendizaje supervisado** consiste en entrenar un modelo con datos históricos (dataset de entrenamiento), de los cuales se conoce la variable objetivo (en este caso, el **nivel de llenado del contenedor**).  
-
-**Regresión Lineal Múltiple**:  
-Modelo matemático que busca aproximar una función lineal entre la variable dependiente (*Y = nivel de llenado*) y un conjunto de variables independientes (*X = tiempo, zona, tipo de contenedor, frecuencia*).  
+### Random Forest para Clasificación
+Random Forest combina múltiples árboles de decisión:
 
 \[
-Y = \beta_0 + \beta_1 X_1 + \beta_2 X_2 + \cdots + \beta_n X_n + \varepsilon
+\hat{y} = \text{mode}\{T_1(x), T_2(x), \dots, T_B(x)\}
 \]
 
 Donde:  
-- \(Y\) = Nivel de llenado estimado (%)  
-- \(X_i\) = Variables independientes (factores asociados al llenado)  
-- \(\beta_i\) = Coeficientes del modelo (pesos)  
-- \(\varepsilon\) = Error residual  
-
-El modelo ajusta los coeficientes minimizando la suma de los errores cuadrados (**Mínimos Cuadrados Ordinarios**).  
+- \(\hat{y}\) = clase predicha final  
+- \(B\) = número de árboles (aquí 100)  
+- \(T_i(x)\) = predicción del árbol *i*  
 
 ---
 
+### Matriz de Confusión
+
+\[
+\begin{bmatrix}
+TN & FP \\
+FN & TP
+\end{bmatrix}
+\]
+
+**Métricas derivadas:**
+
+- **Accuracy** = \((TP + TN) / Total\)  
+- **Precision** = \(TP / (TP + FP)\)  
+- **Recall** = \(TP / (TP + FN)\)  
+- **F1** = \(2 \times \dfrac{Precision \times Recall}{Precision + Recall}\)  
+---
+
+### ⚡ Aplicación del Mecanismo
+
+## Comando Principal (API FastAPI)
+
+    curl -X POST http://localhost:8000/ml_supervisado/entrenar/
+
+    Flujo de Ejecución del Endpoint
 
 
-### 🖥️ Aplicación del Mecanismo
-Ejemplo de aplicación en Python (fase ETL → dataset → modelo):  
+📂 Carga de datos desde CSVs limpios (bitácoras de rutas y contenedores).
 
+🔄 Agregación de porcentajes y promedios por ruta.
 
-    import pandas as pd
-    from sklearn.model_selection import train_test_split
-    from sklearn.linear_model import LinearRegression
-    import matplotlib.pyplot as plt
+🏷️ Generación de la etiqueta Eficiente según reglas de negocio.
 
-    # Cargar dataset (ejemplo con datos simulados de sensores)
-    data = pd.read_csv("smartwaste_dataset.csv")
+✂️ Separación en train/test (70/30).
 
-    # Variables independientes y dependiente
-    X = data[["hora", "dia_semana", "ubicacion_id", "capacidad"]]
-    y = data["nivel_llenado"]
+🌲 Entrenamiento del modelo Random Forest.
 
-    # División en entrenamiento y prueba
-    X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=42)
+📊 Evaluación con matriz de confusión y métricas.
 
-    # Modelo de regresión
-    model = LinearRegression()
-    model.fit(X_train, y_train)
-
-    # Predicciones
-     y_pred = model.predict(X_test) 
+💾 Exportación de modelo (.pkl) y gráficas (.png).
 ---
 
 ### 📊 Gráficos Generados
-| Capacidad por Ruta| Tendencia de Uso | Estado de Contenedores |
-|-----------------------|---------------------|---------------------|
-| Capacidad vs uso actual de contenedores por ruta | Uso promedio de contenedores en el tiempo | Distribución de contenedores por nivel de llenado |
-| ![ruta](https://github.com/juuaaann456/imagenes/blob/7c9722806311bdfb9812c98fdc70f6396b3bc012/imagenes/grafica.PNG) | ![Uso](https://github.com/juuaaann456/imagenes/blob/7c9722806311bdfb9812c98fdc70f6396b3bc012/imagenes/grafica2.PNG) |![contenedores](https://github.com/juuaaann456/imagenes/blob/7c9722806311bdfb9812c98fdc70f6396b3bc012/imagenes/grafica3.PNG) |
 
+Para documentar los resultados del modelo, se generan automáticamente:
+
+Promedio llenado por clase
+![llenado](https://github.com/juuaaann456/imagenes/blob/f04065342c7cd9bdb85b08490d60bff718acf43d/imagenes/llenado.jpg)
+
+Duración de rutas por clase
+![duracion](https://github.com/juuaaann456/imagenes/blob/f04065342c7cd9bdb85b08490d60bff718acf43d/imagenes/duracion.jpg)
+
+Matriz de Confusión del Modelo
+![matriz](https://github.com/juuaaann456/imagenes/blob/f04065342c7cd9bdb85b08490d60bff718acf43d/imagenes/matriz.jpg)
 ---
 
 ### 📈 Resultados Obtenidos
 
-Tras aplicar el modelo de regresión al dataset generado:
+Métricas Clave
 
-- Precisión del modelo (R²): 0.85, indicando un buen nivel de predicción.
+1 .-Accuracy: 0.80 – 0.90 (típico en pruebas con dataset balanceado).
 
-- Se identificaron zonas con mayor generación de residuos en horarios pico (18:00 - 22:00 hrs).
+2 .-Precision/Recall: Dependerá del balance de clases.
 
-- Las simulaciones mostraron una reducción estimada del 20% en rutas innecesarias, optimizando el uso de combustible y tiempo.
+3 .-Interpretación:
+
+- Valores altos de TP (rutas correctamente clasificadas como eficientes) indican buen ajuste.
+
+- Si hay demasiados FN (rutas eficientes clasificadas como ineficientes), se deben ajustar hiperparámetros.
+  
+      {
+        "accuracy": 0.86,
+        "graficas": [
+        "hist_duracion.png",
+        "box_lleno.png",
+        "confusion.png"
+            ]
+        }
+
 ---
+### 🎯 Conclusión de la Fase del Proyecto
 
-### ✅ Conclusión de la Fase del Proyecto
+Importancia de la Fase Supervisada
+Este modelo supervisado representa un paso crítico en el proyecto, al permitir evaluar automáticamente la eficiencia de las rutas con base en evidencia cuantitativa.
 
-La aplicación de análisis supervisado permitió transformar los datos recolectados en conocimiento útil y aplicable para la gestión de residuos.
-Los resultados obtenidos muestran que es posible predecir el llenado de los contenedores con buena precisión, lo cual facilita la optimización de rutas de recolección y una reducción de costos operativos y emisiones contaminantes.
+Beneficios Clave Logrados:
+🔮 Capacidad Predictiva: El sistema diferencia con precisión rutas eficientes e ineficientes.
+📊 Optimización de Recursos: Ayuda a mejorar la planeación logística y asignación de unidades.
+⚡ Automatización: Reduce el tiempo de análisis manual mediante generación automática de métricas y gráficas.
+🎯 Toma de Decisiones Basada en Datos: Proporciona evidencia para la mejora continua del sistema de recolección.
 
-Esta fase representa un paso clave hacia la consolidación de SmartWaste como un sistema inteligente, donde la combinación de IoT y Machine Learning genera un impacto positivo en la sostenibilidad urbana.
+Impacto en la Gestión de Rutas
 
+Permite planificación estratégica de recorridos.
 
+Mejora la asignación de recursos humanos y materiales.
 
+Reduce costos y tiempos de operación al minimizar rutas ineficientes.
 
-
-
-
-
-
-
-
-
-
-
-
-
-
+Proporciona indicadores clave para justificar decisiones en el contexto del proyecto SmartWaste.
+  
