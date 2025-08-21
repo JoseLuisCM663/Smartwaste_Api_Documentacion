@@ -102,7 +102,7 @@ FN & TP
 
 Para documentar los resultados del modelo, se generan automáticamente:
 
-Promedio llenado por clase
+Promedio llenado por clase <br>
 ![llenado](https://github.com/juuaaann456/imagenes/blob/f04065342c7cd9bdb85b08490d60bff718acf43d/imagenes/llenado.jpg)
 
 Duración de rutas por clase
@@ -157,4 +157,5 @@ Reduce costos y tiempos de operación al minimizar rutas ineficientes.
 
 Proporciona indicadores clave para justificar decisiones en el contexto del proyecto SmartWaste.
   
+
 
