@@ -6,103 +6,135 @@ El sistema SmartWasteApi genera continuamente lecturas de sensores en los conten
 
 Un Datawarehouse permitirá centralizar esta información en un esquema optimizado para análisis (OLAP), facilitando consultas multidimensionales y soportando la toma de decisiones estratégicas.
 
-🏗️ Modelo Propuesto (Esquema en Estrella)
+## 🏗️ Modelo Propuesto (Esquema en Estrella)
 
 El modelo propuesto se basa en un esquema en estrella, con una tabla de hechos central (Fact_Lecturas) y cuatro dimensiones principales.
 
-🔹 Tabla de Hechos: Fact_Lecturas
+### 🔹 Tabla de Hechos: Fact_Lecturas
 
 Almacena las métricas medibles del sistema.
 
-Campo	Tipo	Descripción
-Lectura_ID	INT (PK)	Identificador único de la lectura
-Sensor_Id	INT (FK)	Relación con Dim_Sensor
-Contenedor_Id	INT (FK)	Relación con Dim_Contenedor
-Ruta_Id	INT (FK)	Relación con Dim_Ruta
-Tiempo_ID	INT (FK)	Relación con Dim_Tiempo
-Valor	FLOAT	Nivel de llenado del contenedor en %
-🔹 Dimensiones
+| Campo         | Tipo  | Clave | Descripción                                                     |
+|---------------|-------|:-----:|-----------------------------------------------------------------|
+| Lectura_ID    | INT   |  PK   | Identificador único de la lectura                               |
+| Sensor_Id     | INT   |  FK   | → `Dim_Sensor.Sensor_Id`                                        |
+| Contenedor_Id | INT   |  FK   | → `Dim_Contenedor.Contenedor_Id`                                |
+| Ruta_Id       | INT   |  FK   | → `Dim_Ruta.Ruta_Id`                                            |
+| Tiempo_ID     | INT   |  FK   | → `Dim_Tiempo.Tiempo_ID`                                        |
+| Valor         | FLOAT |       | Nivel de llenado del contenedor en % (0–100)                    |
 
-Dim_Sensor
+### 🔹 Dimensión: Dim_Sensor
 
-Sensor_Id (PK)
+| Campo     | Tipo    | Clave | Descripción                              |
+|-----------|---------|:-----:|------------------------------------------|
+| Sensor_Id | INT     |  PK   | Identificador único del sensor           |
+| Tipo      | VARCHAR |       | Tipo (ultrasónico, presión, etc.)        |
+| Modelo    | VARCHAR |       | Modelo o referencia del fabricante       |
 
-Tipo (ultrasónico, presión, etc.)
+### 🔹 Dimensión: Dim_Contenedor
 
-Modelo
+| Campo         | Tipo    | Clave | Descripción                       |
+|---------------|---------|:-----:|-----------------------------------|
+| Contenedor_Id | INT     |  PK   | Identificador único del contenedor|
+| Ubicacion     | VARCHAR |       | Dirección o zona                   |
+| Capacidad     | FLOAT   |       | Capacidad máxima en litros         |
 
-Dim_Contenedor
+### 🔹 Dimensión: Dim_Ruta
 
-Contenedor_Id (PK)
+| Campo    | Tipo    | Clave | Descripción                |
+|----------|---------|:-----:|----------------------------|
+| Ruta_Id  | INT     |  PK   | Identificador de la ruta   |
+| Nombre   | VARCHAR |       | Nombre de la ruta          |
+| Descripcion | VARCHAR |    | Observaciones adicionales  |
 
-Ubicación (zona/dirección)
+### 🔹 Dimensión: Dim_Tiempo
 
-Capacidad (litros)
+| Campo      | Tipo    | Clave | Descripción                         |
+|------------|---------|:-----:|-------------------------------------|
+| Tiempo_ID  | INT     |  PK   | Identificador del tiempo            |
+| Fecha      | DATE    |       | Fecha de la lectura                 |
+| Hora       | TIME    |       | Hora de la lectura                  |
+| Dia        | INT     |       | Día del mes                         |
+| Mes        | INT     |       | Mes                                 |
+| Año        | INT     |       | Año                                 |
+| DiaSemana  | VARCHAR |       | Nombre del día (Lunes, Martes, …)   |
 
-Dim_Ruta
+---
 
-Ruta_Id (PK)
+## 📈 Diagrama (Mermaid)
 
-Nombre
+```mermaid
+erDiagram
+    Fact_Lecturas {
+        INT Lectura_ID PK
+        INT Sensor_Id FK
+        INT Contenedor_Id FK
+        INT Ruta_Id FK
+        INT Tiempo_ID FK
+        FLOAT Valor
+    }
 
-Descripción
+    Dim_Sensor {
+        INT Sensor_Id PK
+        VARCHAR Tipo
+        VARCHAR Modelo
+    }
 
-Dim_Tiempo
+    Dim_Contenedor {
+        INT Contenedor_Id PK
+        VARCHAR Ubicacion
+        FLOAT Capacidad
+    }
 
-Tiempo_ID (PK)
+    Dim_Ruta {
+        INT Ruta_Id PK
+        VARCHAR Nombre
+        VARCHAR Descripcion
+    }
 
-Fecha
+    Dim_Tiempo {
+        INT Tiempo_ID PK
+        DATE Fecha
+        TIME Hora
+        INT Dia
+        INT Mes
+        INT Año
+        VARCHAR DiaSemana
+    }
 
-Hora
-
-Día
-
-Mes
-
-Año
-
-DíaSemana
-
-## 🎯 Propuesta de Orígenes de Datos Alternativos
-
+    Fact_Lecturas }o--|| Dim_Sensor : "Sensor_Id"
+    Fact_Lecturas }o--|| Dim_Contenedor : "Contenedor_Id"
+    Fact_Lecturas }o--|| Dim_Ruta : "Ruta_Id"
+    Fact_Lecturas }o--|| Dim_Tiempo : "Tiempo_ID"
+🎯 Propuesta de Orígenes de Datos Alternativos
 Además de los datos generados por los sensores, se pueden integrar otras fuentes externas en el Datawarehouse:
 
 Meteorología (APIs públicas, ej. OpenWeatherMap)
-
 Relacionar clima (lluvia, calor, humedad) con generación de residuos.
 
 Demografía (INEGI / censos poblacionales)
-
 Conectar densidad de población por zona con niveles de llenado.
 
 Calendarios de eventos locales
-
 Identificar patrones de aumento de residuos en festividades o ferias.
 
-## 💡 5 Experimentos de Asociación de Datos
-
+💡 5 Experimentos de Asociación de Datos
 Nivel de llenado vs Rutas
-
 Evaluar si los recorridos actuales evitan sobrellenado.
 
 Nivel de llenado vs Densidad poblacional
-
 Hipótesis: zonas más habitadas → más residuos.
 
 Humedad sensor vs Clima real
-
 Detectar si humedad elevada es por lluvia o falla en contenedor.
 
 Eventos locales vs Generación de residuos
-
 Correlación de festividades con picos de llenado.
 
 Tiempo de llenado vs Capacidad del contenedor
-
 Optimizar diseño e instalación de nuevos contenedores.
 
-## ✅ Toma de Decisiones (5 Supuestos)
-
+✅ Toma de Decisiones (5 Supuestos)
 Si los contenedores se llenan más rápido en zonas densas, se asignarán contenedores adicionales.
 
 Si la lluvia genera lecturas falsas de humedad, se planificarán mantenimientos preventivos.
