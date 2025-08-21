@@ -147,3 +147,5 @@ Si eventos comunitarios aumentan el llenado, se crearán rutas temporales de rec
 Si rutas actuales generan sobrellenados, se rediseñarán los itinerarios de camiones.
 
 Si los patrones climáticos influyen, se aplicarán ajustes dinámicos con base en pronósticos.
+
+xd
