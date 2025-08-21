@@ -1,4 +1,4 @@
-🎯 Modelo de Aprendizaje Supervisado - Clasificación de Rutas Eficientes  
+### 🎯 Modelo de Aprendizaje Supervisado - Clasificación de Rutas Eficientes  
 
 📋 Propuesta de Aplicación  
 El modelo de aprendizaje supervisado se utiliza para **clasificar automáticamente rutas de recolección** en **Eficientes (1)** o **No Eficientes (0)**, tomando en cuenta los tiempos de duración y el porcentaje de recolección alcanzado.  
@@ -157,3 +157,4 @@ Reduce costos y tiempos de operación al minimizar rutas ineficientes.
 
 Proporciona indicadores clave para justificar decisiones en el contexto del proyecto SmartWaste.
   
+
