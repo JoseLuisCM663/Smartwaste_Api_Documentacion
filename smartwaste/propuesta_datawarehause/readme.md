@@ -106,7 +106,10 @@ erDiagram
     Fact_Lecturas }o--|| Dim_Contenedor : "Contenedor_Id"
     Fact_Lecturas }o--|| Dim_Ruta : "Ruta_Id"
     Fact_Lecturas }o--|| Dim_Tiempo : "Tiempo_ID"
-🎯 Propuesta de Orígenes de Datos Alternativos
+```
+
+## 🎯 Propuesta de Orígenes de Datos Alternativos
+
 Además de los datos generados por los sensores, se pueden integrar otras fuentes externas en el Datawarehouse:
 
 Meteorología (APIs públicas, ej. OpenWeatherMap)
@@ -118,7 +121,7 @@ Conectar densidad de población por zona con niveles de llenado.
 Calendarios de eventos locales
 Identificar patrones de aumento de residuos en festividades o ferias.
 
-💡 5 Experimentos de Asociación de Datos
+## 💡 5 Experimentos de Asociación de Datos
 Nivel de llenado vs Rutas
 Evaluar si los recorridos actuales evitan sobrellenado.
 
@@ -134,7 +137,7 @@ Correlación de festividades con picos de llenado.
 Tiempo de llenado vs Capacidad del contenedor
 Optimizar diseño e instalación de nuevos contenedores.
 
-✅ Toma de Decisiones (5 Supuestos)
+## ✅ Toma de Decisiones (5 Supuestos)
 Si los contenedores se llenan más rápido en zonas densas, se asignarán contenedores adicionales.
 
 Si la lluvia genera lecturas falsas de humedad, se planificarán mantenimientos preventivos.
