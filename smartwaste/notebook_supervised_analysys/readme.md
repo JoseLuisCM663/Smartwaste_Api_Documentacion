@@ -105,10 +105,10 @@ Para documentar los resultados del modelo, se generan automáticamente:
 Promedio llenado por clase <br>
 ![llenado](https://github.com/juuaaann456/imagenes/blob/f04065342c7cd9bdb85b08490d60bff718acf43d/imagenes/llenado.jpg)
 
-Duración de rutas por clase
+Duración de rutas por clase <br>
 ![duracion](https://github.com/juuaaann456/imagenes/blob/f04065342c7cd9bdb85b08490d60bff718acf43d/imagenes/duracion.jpg)
 
-Matriz de Confusión del Modelo
+Matriz de Confusión del Modelo <br>
 ![matriz](https://github.com/juuaaann456/imagenes/blob/f04065342c7cd9bdb85b08490d60bff718acf43d/imagenes/matriz.jpg)
 ---
 
@@ -157,5 +157,6 @@ Reduce costos y tiempos de operación al minimizar rutas ineficientes.
 
 Proporciona indicadores clave para justificar decisiones en el contexto del proyecto SmartWaste.
   
+
 
 
